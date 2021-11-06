@@ -1,0 +1,23 @@
+{
+  "url": "{{base.url}}",
+  "headers": {
+    "X-Api-Key": "{{api-key-integrador}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "start": "{{start}}",
+    "billable": "true",
+    "description": "{{descripcion-Horas}}",
+    "projectId": "{{id-project}}",
+    "end": "{{end}}",
+    "customFields": [
+      {
+        "customFieldId" : "5b1e6b160cb8793dd93ec120",
+        "timeEntryId" : "5c5bda4fb079871c518b6f07",
+        "value": "San Francisco"
+      }
+    ]
+  },
+
+  "endpoint": "/workspaces/{{id-workspace}}/time-entries/{{id-time}}"
+}

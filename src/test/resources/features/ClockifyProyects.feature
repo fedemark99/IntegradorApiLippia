@@ -5,7 +5,7 @@ Feature: Projects
 
   @Success
   Scenario Outline: Crear project en Workspace resultado exitoso
-    Given Mi cuenta creada en clockify y mi X-Api-Key geneada
+    Given Mi cuenta creada en clockify y mi X-Api-Key generada
     And un id workspace valido
     And un nombre de proyecto <name>
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
@@ -18,7 +18,7 @@ Feature: Projects
 
   @Success
   Scenario Outline: Crear project en Workspace - Proyecto repetido
-    Given Mi cuenta creada en clockify y mi X-Api-Key geneada
+    Given Mi cuenta creada en clockify y mi X-Api-Key generada
     And un id workspace valido
     And un nombre de proyecto <name>
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
@@ -30,7 +30,7 @@ Feature: Projects
       | POST      | PROJECT_ERROR | projects/rq | 400    | project/projectDuplicated | Academy15 | name:Academy15 |
 
   Scenario Outline: Crear project en Workspace resultado exitoso
-    Given Mi cuenta creada en clockify y mi X-Api-Key geneada
+    Given Mi cuenta creada en clockify y mi X-Api-Key generada
     And un id workspace valido
     And un nombre de proyecto Academi46
     When I perform a 'POST' to 'PROJECT' endpoint with the 'projects/rq' and ''

@@ -1,5 +1,6 @@
 package api.model.project;
 
+
 import api.model.workspace.HourlyRate;
 import api.model.workspace.Membership;
 import com.fasterxml.jackson.annotation.JsonProperty;

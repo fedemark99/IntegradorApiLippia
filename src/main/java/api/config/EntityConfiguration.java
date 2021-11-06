@@ -17,6 +17,36 @@ public enum EntityConfiguration {
             return ResponseHeadersService.class;
         }
     },
+    INTEGRADOR {
+        @Override
+        public Class<?> getEntityService() {
+            return IntegradorApiServiceGetTime.class;
+        }
+    },
+    INTEGRADOR_AGREGAR_HORAS {
+        @Override
+        public Class<?> getEntityService() {
+            return IntegradorAgregarHorasService.class;
+        }
+    },
+    INTEGRADOR_MODIFICAR_HORAS {
+        @Override
+        public Class<?> getEntityService() {
+            return IntegradorModificarHorasService.class;
+        }
+    },
+    INTEGRADOR_CONSULTAR_HORA {
+        @Override
+        public Class<?> getEntityService() {
+            return IntegradorConsultarHoraService.class;
+        }
+    },
+    INTEGRADOR_ELIMINAR_HORAS {
+        @Override
+        public Class<?> getEntityService() {
+            return IntegradorEliminarHoraService.class;
+        }
+    },
     WORKSPACE {
         @Override
         public Class<?> getEntityService() {
@@ -51,6 +81,13 @@ public enum EntityConfiguration {
         @Override
         public Class<?> getEntityService() {
             return ProjectErrorService.class;
+        }
+    },
+
+    PROJECT1 {
+        @Override
+        public Class<?> getEntityService() {
+            return ProjectService1.class;
         }
     };
 

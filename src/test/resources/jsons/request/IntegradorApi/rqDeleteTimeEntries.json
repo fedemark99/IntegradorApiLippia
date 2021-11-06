@@ -1,0 +1,9 @@
+{
+  "url": "{{base.url}}",
+  "headers": {
+    "X-Api-Key": "{{api-key-integrador}}",
+    "Content-Type": "application/json"
+  },
+
+  "endpoint": "/workspaces/{{id-workspace}}/time-entries/{{id-hours-delete}}"
+}

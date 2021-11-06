@@ -1,0 +1,17 @@
+{
+  "url": "https://api.clockify.me/api/v1",
+  "headers": {
+    "X-Api-Key": "NTY3MDMzZDItZmJlMy00YjI3LTg2YTMtZjliMGMzNTQ3NjIz",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "EjemploPost",
+    "isPublic": "false",
+    "color": "#f44336",
+    "note": "This is project's note",
+    "billable": "true",
+    "public": false
+  },
+
+  "endpoint": "/workspaces/61732c98a31e1203a8a8197c/projects"
+}

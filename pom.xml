@@ -33,6 +33,7 @@
             </activation>
             <properties>
                 <apiExample.runner>testng.xml</apiExample.runner>
+                <base.api.url>https://api.clockify.me/api/v1</base.api.url>
             </properties>
         </profile>
         <profile>
